@@ -24,6 +24,15 @@
             text-align: center;
         }
 
+        .product {
+            animation: fadeIn 1s ease-in-out;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -37,6 +46,11 @@
         button:hover {
             background-color: #45a049;
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
@@ -49,20 +63,59 @@
         <h2>Explore Our Premium Accounts</h2>
 
         <!-- Netflix Products -->
-        <h3>Netflix Accounts</h3>
-        <ul>
-            <li>Netflix Basic Bliss Account - $2.99</li>
-            <li>Netflix Standard Sensation Account - $4.99</li>
-            <li>Netflix Premium Paradise Account - $7.99</li>
-        </ul>
+        <div class="product">
+            <h3>Netflix Basic Bliss Account</h3>
+            <p><strong>Price:</strong> $2.99</p>
+            <p><strong>Description:</strong> Dive into the Netflix realm with our Basic Bliss Account! Enjoy unlimited movies, series, and ad-free mobile gaming. Stream in standard definition on a single device at a time – perfect for solo escapades into the world of entertainment.</p>
+            <p><strong>Functions:</strong></p>
+            <ul>
+                <li>Unlimited movies, series, and ad-free mobile gaming.</li>
+                <li>Stream on 1 supported device at a time.</li>
+                <li>HD streaming.</li>
+                <li>Download on 1 supported device at a time.</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <h3>Netflix Standard Sensation Account</h3>
+            <p><strong>Price:</strong> $4.99</p>
+            <p><strong>Description:</strong> Elevate your Netflix experience with the Standard Sensation Account! Immerse yourself in unlimited movies, series, and mobile gaming without interruptions. Stream in high definition on two devices simultaneously. Share the joy with friends or family – a cinematic experience tailored for you!</p>
+            <p><strong>Functions:</strong></p>
+            <ul>
+                <li>Unlimited movies, series, and ad-free mobile gaming.</li>
+                <li>Stream on 2 supported devices at a time.</li>
+                <li>Full HD streaming.</li>
+                <li>Download on 2 supported devices at a time.</li>
+                <li>Add up to 1 extra member not living with you.</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <h3>Netflix Premium Paradise Account</h3>
+            <p><strong>Price:</strong> $7.99</p>
+            <p><strong>Description:</strong> Indulge in the ultimate Netflix experience with our Premium Paradise Account! Enjoy unlimited movies, series, and mobile gaming without ads. Stream in ultra-high definition on up to four devices at once. Perfect for larger households or creating a shared streaming haven with friends.</p>
+            <p><strong>Functions:</strong></p>
+            <ul>
+                <li>Unlimited movies, series, and ad-free mobile gaming.</li>
+                <li>Stream on 4 supported devices at a time.</li>
+                <li>Ultra HD streaming.</li>
+                <li>Download on 6 supported devices at a time.</li>
+                <li>Add up to 2 extra members not living with you.</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
 
         <!-- Spotify Product -->
-        <h3>Spotify Premium Accounts</h3>
-        <ul>
-            <li>Spotify Premium Account - $4.99</li>
-        </ul>
+        <div class="product">
+            <h3>Spotify Premium Account</h3>
+            <p><strong>Price:</strong> $4.99</p>
+            <p><strong>Description:</strong> Elevate your music experience with our Spotify Premium Account! Enjoy ad-free streaming, offline downloads, and higher sound quality. Perfect for music enthusiasts seeking uninterrupted beats.</p>
+            <button>Buy Now</button>
+        </div>
 
-        <!-- Add more product listings as needed -->
+        <!-- Add more products as needed -->
 
         <!-- Check Products Button -->
         <a href="https://shoppy.gg/@DUPLEX" target="_blank"><button>Check Products</button></a>
